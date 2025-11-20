@@ -1,4 +1,5 @@
-import { Image, TouchableOpacity, View } from "react-native"
+import {View, Image, TouchableOpacity} from "react-native"
+import { Router } from "expo-router"
 import { MaterialIcons } from "@expo/vector-icons"
 
 import { colors } from "@/styles/colors"
@@ -9,6 +10,7 @@ import { InputText } from "@/components/InputText"
 
 export default function Index () {
     return (
+           
         <View style={styles.container}>
             <View style={styles.header}>
                 <Image 
@@ -52,5 +54,6 @@ export default function Index () {
                 />
             </View>
         </View>
+         
     )
 }
