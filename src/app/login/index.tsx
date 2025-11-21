@@ -1,5 +1,5 @@
-import {View, Image, TouchableOpacity} from "react-native"
-import { Router } from "expo-router"
+import { View, Image, TouchableOpacity } from "react-native"
+import { router } from "expo-router"
 import { MaterialIcons } from "@expo/vector-icons"
 
 import { colors } from "@/styles/colors"
@@ -45,7 +45,10 @@ export default function Index () {
 
             <View style={styles.buttonContainer}>
                 <Button 
-                    title="Entrar"                    
+                    title="Entrar"
+                    onPress= {() => {
+                        router.navigate('./dashboard')
+                    }}                 
                 />
 
                 <Button 
