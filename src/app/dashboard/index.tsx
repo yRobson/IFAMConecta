@@ -1,5 +1,6 @@
 import { View, Image, TouchableOpacity, FlatList } from "react-native"
 import { useRef, useState, useEffect } from "react"
+import { router } from "expo-router"
 
 import { MaterialIcons } from "@expo/vector-icons"
 import { colors } from "@/styles/colors"
@@ -75,6 +76,9 @@ export default function Index() {
                 <CardButton 
                     title="Eventos"
                     iconName="event"
+                    onPress= {() => {
+                         router.navigate('./eventos')
+                     }}
                 />
 
                 <CardButton 
