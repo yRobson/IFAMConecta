@@ -7,7 +7,7 @@ export default function Index(){
     return (
         <View style={styles.container}>
             <ImageBackground
-                source={require("@/assets/calendario.png")}
+                source={require("@/assets/noticias.png")}
                 style={styles.background}
             >
                 <View style={styles.header}>

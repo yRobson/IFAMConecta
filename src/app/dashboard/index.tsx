@@ -71,24 +71,29 @@ export default function Index() {
                 <CardButton 
                     title="Calendário"
                     iconName="calendar-month"
+                    onPress= {() => {
+                         router.navigate('./calendario')
+                     }}
                 />
 
                 <CardButton 
                     title="Eventos"
                     iconName="event"
-                    onPress= {() => {
-                         router.navigate('./eventos')
-                     }}
+                    onPress= {()=>router.navigate('./eventos')
+                     }
                 />
 
                 <CardButton 
                     title="Notícias"
                     iconName="newspaper"
+                    onPress= {() => {
+                         router.navigate('./noticias')
+                     }}
                 />
 
                 <CardButton 
                     title="Biblioteca"
-                    iconName="local-library"
+                    iconName="local-library" 
                 />
 
                 <CardButton 
